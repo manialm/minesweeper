@@ -2,6 +2,7 @@
     TODO:
         - Throw confetti when player wins
         - Refactor dynamically setting grid to repeat(${SIZE}, 1fr)
+        - Refactor Cell to contain its own row and column
 -->
 <script lang="ts">
     import Cell from './Cell'
