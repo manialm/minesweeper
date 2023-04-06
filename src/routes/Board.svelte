@@ -35,7 +35,9 @@
 	}
 
 	function onRightClickCell(i: number, j: number) {
-		board[i][j].flagged = !board[i][j].flagged;
+		if (!board[i][j].clicked) {
+			board[i][j].flagged = !board[i][j].flagged;
+		}
 	}
 
 	function cellContent(i: number, j: number) {
