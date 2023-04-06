@@ -1,3 +1,8 @@
+<!-- 
+    TODO:
+        - Throw confetti when player wins
+        - Refactor dynamically setting grid to repeat(${SIZE}, 1fr)
+-->
 <script lang="ts">
     import Cell from './Cell'
 
@@ -148,7 +153,8 @@
 }
 
 .item.flagged {
-    background: url('$lib/images/flag.png') #111;
+    background: url('$lib/images/flag2.png') #111;
+    image-rendering: crisp-edges;
     background-size: 1.5em;
     background-repeat: no-repeat;
     background-position: center;
