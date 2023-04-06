@@ -79,6 +79,7 @@
 
     // reveal emptiness across connected component
     function propogateEmpty(i: number, j: number) {
+        board[i][j].flagged = false;
         board[i][j].clicked = true;
 
         for (let dx of [-1, 0, 1]) {
