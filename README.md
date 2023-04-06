@@ -9,4 +9,4 @@ pnpm run dev
 ```
 
 ## Screenshot
-![Alt text](demo.png)
+![Alt text](screenshot.png)
