@@ -107,6 +107,7 @@
     style:grid-template-rows={`repeat(${SIZE}, 1fr)`}>
     {#each board as row, i}
         {#each row as cell, j}
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
             <span class="item"
                 on:contextmenu={() => onDoubeclickCell(i, j)}
                 on:click={() => onClickCell(i, j)}
