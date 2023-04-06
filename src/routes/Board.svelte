@@ -38,7 +38,7 @@
         }
     }
     
-    function onDoubeclickCell(i: number, j:number) {
+    function onRightClickCell(i: number, j:number) {
         board[i][j].flagged = !board[i][j].flagged;
     }
 
@@ -115,7 +115,7 @@
         {#each row as cell, j}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <span class="item"
-                on:contextmenu={() => onDoubeclickCell(i, j)}
+                on:contextmenu={() => onRightClickCell(i, j)}
                 on:click={() => onClickCell(i, j)}
                 class:flagged={board[i][j].flagged}
                 class:clicked={board[i][j].clicked}>
