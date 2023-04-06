@@ -8,6 +8,7 @@
     import Cell from './Cell'
 
     let SIZE = 8;
+    const bombDensity = 0.15;
 
     let board: Cell[][];
 
@@ -20,7 +21,7 @@
         )
     );
 
-    const randomBool = () => (Math.random() < 0.85) ? false : true
+    const randomBool = () => (Math.random() < 1 - bombDensity) ? false : true
     board.forEach(row => row.forEach(cell => cell.isBomb = randomBool()));
 
     $: {
@@ -145,8 +146,7 @@
     padding: 2%;
     border-radius: 25%;
     background: #111;
-    transition: background-color .3s,
-                        background-image s;
+    transition: background-color .3s;
 }
 
 .item:hover {
@@ -175,10 +175,6 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-* {
-    /* outline: pink solid 2px; */
 }
 
 </style>
