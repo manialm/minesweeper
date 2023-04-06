@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/Minecraft.ttf');
+}
