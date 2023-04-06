@@ -1,9 +1,12 @@
 # minesweeper
 Dead simple Minesweeper clone written in Svelte.
-# Running locally
+## Running locally
 
 ```bash
 git clone https://github.com/manialm/minesweeper
 pnpm install
 pnpm run dev
 ```
+
+## Screenshot
+![Alt text](demo.png)
